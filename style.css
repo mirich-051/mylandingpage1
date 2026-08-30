@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -19,11 +20,10 @@ footer {
 
 header {
   max-height: 56px;
-  padding: 16px 40px;
+  padding: 16px 200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-
 }
 
 .header-logo {
@@ -60,11 +60,43 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #007BFF;
   color: #E5E7EB;
-  ;
+}
+
+.hero, .info, .quote {
+  padding: 32px 200px;
 }
 
 .hero {
   display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.hero-text {
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-text button, .action button {
+  display: block;
+  width: 100px;
+  color: #E5E7EB;
+  font-weight: 700;
+  padding: 8px 16px;
+  background-color: #3882F6;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.hero-text a {
+  text-decoration: none;
+}
+
+.hero-text button:hover {
+  background-color: #000080;
 }
 
 .hero h1 {
@@ -76,4 +108,110 @@ nav ul li a:hover {
 .hero p {
   font-size: 18px;
   color: #E5E7EB;
+}
+
+.hero img {
+  display: block;
+  max-height: 300px;
+  
+}
+
+.info h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  padding-bottom: 32px;
+}
+
+.info-img {
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-img img {
+  display: block;
+  max-width: 128px;
+  border-radius: 8px;
+}
+
+.info-img a:hover img {
+  outline: 8px ridge #3882F6;
+}
+
+.img-text {
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-text p {
+  max-width: 128px;
+  text-align: center;
+}
+
+.quote {
+  background-color: #E5E7EB;
+  padding: 32px 250px;
+}
+
+.quote > blockquote {
+  font-size: 36px;
+  color: #1F2937;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.quote > p {
+  padding-top: 24px;
+  font-size: 24px;
+  color: #1F2937;
+  font-weight: 700;
+  text-align: right;
+}
+
+.action {
+  margin: 32px 200px;
+  padding: 32px;
+  border-radius: 8px;
+  background-color: #3882F6;
+  display: flex;
+  gap: 32px;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.action a {
+  text-decoration: none;
+}
+
+.action button:hover {
+  background-color: #000080;
+}
+
+.call {
+  color: #F9FAF8;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.call h2 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.call p {
+  font-size: 16px;
+  font-weight: normal;
+
+}
+footer {
+  max-height: 56px;
+  padding: 16px 200px;
+  font-size: 16px;
+  color: #F9FAF8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
